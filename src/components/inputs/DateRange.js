@@ -32,7 +32,6 @@ class DateRange extends Component {
                         floatingLabelText="De"
                         defaultDate={this.props.data.inputFrom.minDate}
                         openToYearSelection={true}
-                        locale={"pl"}
                     />
                     <DatePicker style={optionsStyle}
                         onChange={this.props.data.inputTo.handleChange}
@@ -40,8 +39,6 @@ class DateRange extends Component {
                         floatingLabelText="Até"
                         defaultDate={this.props.data.inputTo.maxDate}
                         openToYearSelection={true}
-                        locale={"pl"}
-                        hintText="pl locale"
                     />
                 </div>
             </div>

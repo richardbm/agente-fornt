@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import DateRange from "./inputs/DateRange";
-import Select from "react-select";
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import RaisedButton from 'material-ui/RaisedButton';
+import Select from'react-select';
+
 
 const styles = {
     block: {

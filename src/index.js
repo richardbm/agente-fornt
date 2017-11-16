@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Select from 'react-select';
+require("react-select");
+
 // Be sure to include styles at some point, probably during your bootstrapping
 //import 'react-select/dist/react-select.css';
 
