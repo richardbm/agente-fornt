@@ -1,4 +1,0 @@
-function multi () {
-
-    $('#optgroup').multiSelect();
-}
