@@ -4,10 +4,9 @@
 
 
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: './public/index.html',
+    template: './src/index.html',
     filename: 'index.html',
     inject: 'body'
 });
@@ -21,9 +20,16 @@ module.exports = {
     },
     module: {
         loaders: [
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loaders: ['style-loader', 'css-loader'],
+            },
             { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, include: /src/ },
-            { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/, include: /src/ }
-        ]
+            { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/, include: /src/ },
+
+        ],
+
     },
     // add this line
     plugins: [HtmlWebpackPluginConfig]
