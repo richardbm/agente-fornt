@@ -55,7 +55,7 @@ class Filters extends Component {
         let min_date = this.state.minDate.toISOString().split('T')[0];
         let max_date = this.state.maxDate.toISOString().split('T')[0];
         let filters = `?consultor_id=${users}&min_date=${min_date}&max_date=${max_date}`;
-        let url = `http://localhost:8000/relatorio/${filters}`;
+        let url = `https://agence-test-back.herokuapp.com/relatorio/${filters}`;
         fetch(url).then((response) => {
             return response.json()
         }).then((json) => {
@@ -92,7 +92,7 @@ class Filters extends Component {
 
 
         const getOptions = () => {
-            return fetch(`http://localhost:8000/consultor/`)
+            return fetch(`https://agence-test-back.herokuapp.com/consultor/`)
                 .then((response) => {
                     return response.json();
                 }).then((json) => {
