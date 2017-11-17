@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatePicker from 'material-ui/DatePicker';
+import CalendarMonth from 'material-ui/DatePicker';
 import Toggle from 'material-ui/Toggle';
 
 const optionsStyle = {

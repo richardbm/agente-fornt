@@ -22,9 +22,9 @@ class Filters extends Component {
         super(props);
         this.minDate = new Date();
         this.maxDate = new Date();
-        this.minDate.setFullYear(this.minDate.getFullYear() - 12);
+        this.minDate.setFullYear(2007, 1, 1);
         this.minDate.setHours(0, 0, 0, 0);
-        this.maxDate.setFullYear(this.maxDate.getFullYear());
+        this.maxDate.setFullYear(2007, 2, 1);
         this.maxDate.setHours(0, 0, 0, 0);
         this.state = {value: '', minDate: this.minDate, maxDate: this.maxDate};
         this.handleSelect = this.handleSelect.bind(this);
